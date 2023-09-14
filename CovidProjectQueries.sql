@@ -8,7 +8,7 @@ ORDER BY location, date;
 
 
 --Total Cases vs Total Deaths
---Shows likelihood of death if a person were to contract COVID in their countyr
+--Shows likelihood of death if a person were to contract COVID in their country
 
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases) * 100 AS DeathPercentage
 FROM CovidProject..CovidDeaths
